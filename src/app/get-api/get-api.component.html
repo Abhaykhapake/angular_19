@@ -1,0 +1,19 @@
+<p>get-api works!</p>
+<button class="btn btn-primary"  (click)="getData()" >getdata </button>
+<table  class="table">
+    <thead>
+        <th>id</th>
+        <th>name</th>
+        <th>username </th>
+        <th>email</th>
+    </thead>
+    <tbody *ngFor="let i of userData">
+   
+        <td>{{i.id}}</td>
+        <td>{{i.name}}</td>
+        <td>{{i.username}}</td>
+        <td>{{i.email}}</td>
+    
+    </tbody>
+
+</table>
